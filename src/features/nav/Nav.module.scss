@@ -1,0 +1,55 @@
+@import "./../../common/style/sass/variables";
+@import "./../../common/style/sass/mixins";
+
+
+.navContainer {
+  @media (max-width: 1024px) {
+
+  }
+
+  color: white;
+.navButton{
+  position: fixed;
+  z-index: 1;
+  display: none;
+  top:220px;
+  background-color: #787878;
+  padding: 10px;
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}
+
+  .navContent {
+    @media (max-width: 1024px) {
+      position: fixed;
+      transform: translate(-320px,0);
+      transition: 0.5s;
+      display: block;
+    }
+    background-color: $secondBgColor;
+    padding: 22px 22px 44px 22px;
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .navItemContainer {
+      .navItem {
+        display: flex;
+        width: 100%;
+        text-decoration: none;
+        color: white;
+        padding: 3px 0;
+        transition: 0.5s;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+  .showNav{
+
+    transform: translate(0,0);
+  }
+}

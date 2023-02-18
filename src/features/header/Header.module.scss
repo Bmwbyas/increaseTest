@@ -1,0 +1,48 @@
+@import "./../../common/style/sass/variables";
+@import "./../../common/style/sass/mixins";
+
+.wrapper {
+
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) minmax(200px, 3fr) minmax(300px, 6fr);
+  @media (max-width: 768px) {
+    grid-template-columns: minmax(280px, 1fr)
+  }
+  gap: 20px;
+
+  .firstContainer {
+    min-height: 10vh;
+    background-color: $secondBgColor;
+  }
+
+  .secondContainer {
+    //flex: 0 0 30%;
+    min-height: 10vh;
+    background-color: $secondBgColor;
+  }
+
+  .thirdContainer {
+
+    min-height: 10vh;
+    @include flex(column, flex-end, center, wrap);
+    background-color: $secondBgColor;
+    padding: 10px 20px 10px 0;
+
+    p, a {
+
+
+      color: white;
+      transition: 0.5s;
+      cursor: pointer;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        color: red;
+      }
+    }
+
+  }
+}

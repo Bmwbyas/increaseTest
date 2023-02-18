@@ -1,0 +1,19 @@
+@import "./../../../common/style/sass/variables";
+@import "./../../../common/style/sass/mixins";
+
+.container{
+  display: grid;
+  grid-template-columns: minmax(300px,1fr) minmax(300px,1fr);
+  @media (max-width: 768px) {
+    grid-template-columns: minmax(300px,1fr)
+  }
+  gap:22px;
+
+  .column{
+    padding: 22px;
+    line-height: 22px;
+    background-color: $bgColor;
+  }
+
+
+}

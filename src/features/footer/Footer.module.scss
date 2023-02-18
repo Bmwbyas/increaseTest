@@ -1,0 +1,48 @@
+@import "./../../common/style/sass/variables";
+@import "./../../common/style/sass/mixins";
+
+.footerContainer{
+  display: grid ;
+  grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr) minmax(280px, 1fr);
+@media (max-width: 1024px) {
+  grid-template-columns: minmax(280px, 1fr)
+
+}
+  justify-content: center;
+  gap:30px;
+  color:white;
+  .pointsContainer{
+
+    padding: 22px;
+    column-count: 2;
+
+   list-style: none;
+    background-color: $secondBgColor;
+    .pointItem{
+
+    }
+  }
+  .seoContainer{
+    background-color: $secondBgColor;
+
+    .seoList{
+      width: 100%;
+      margin: 22px auto;
+      list-style-type:square;
+      margin-left: 50px;
+
+    }
+  }
+  .twoBlocks{
+    @media (max-width: 1024px) {
+
+    }
+    display: grid;
+    grid-auto-rows: 1fr 1fr;
+    gap:30px;
+    .block{
+      min-height: 50px;
+      background-color: $secondBgColor;
+    }
+  }
+}

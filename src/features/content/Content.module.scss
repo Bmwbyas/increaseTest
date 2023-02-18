@@ -1,0 +1,15 @@
+@import "./../../common/style/sass/variables";
+@import "./../../common/style/sass/mixins";
+
+
+.container {
+
+  display: grid;
+  grid-template-columns: minmax(250px,1fr) minmax(300px,5fr);
+  margin-top: 10px;
+  gap:22px;
+  @media (max-width: 1024px) {
+    grid-template-columns: minmax(250px,1fr)
+}
+
+}

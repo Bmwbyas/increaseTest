@@ -1,0 +1,19 @@
+@mixin text ($fontSize,$fontWeight){
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+}
+@mixin maxWidth(){
+  max-width: 1920px;
+
+}
+@mixin flex($flexDirection,$alignItems,$justifyContent,$flexWrap){
+  display: flex;
+  flex-direction: $flexDirection;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+  flex-wrap: $flexWrap;
+}
+@mixin container(){
+  width: 90%;
+  margin: 3% auto;
+}
