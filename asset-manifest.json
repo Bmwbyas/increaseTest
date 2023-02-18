@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/increaseTest/static/css/main.87b12d76.css",
+    "main.js": "/increaseTest/static/js/main.277da057.js",
+    "static/js/787.0c3f432a.chunk.js": "/increaseTest/static/js/787.0c3f432a.chunk.js",
+    "index.html": "/increaseTest/index.html",
+    "main.87b12d76.css.map": "/increaseTest/static/css/main.87b12d76.css.map",
+    "main.277da057.js.map": "/increaseTest/static/js/main.277da057.js.map",
+    "787.0c3f432a.chunk.js.map": "/increaseTest/static/js/787.0c3f432a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87b12d76.css",
+    "static/js/main.277da057.js"
+  ]
+}
